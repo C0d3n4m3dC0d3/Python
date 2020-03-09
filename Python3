@@ -1,0 +1,294 @@
+PYTHON3 CLI in TERMINAL
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print ("Hello world!")
+Hello world!
+
+>>> msg = "Hello World!"
+>>> print(msg)
+Hello World!
+
+>>> type(msg)
+<class 'str'>
+
+>>> num = 123
+>>> type(num)
+<class 'int'>
+
+>>> deci = 3.14
+>>> type(deci)
+<class 'float'>
+
+>>> name = input()
+ABCD
+
+>>> type(name)
+<class 'str'>
+
+>>> name = input("Enter your name:" )
+Enter your name:ABCD
+
+>>> print(name)
+ABCD
+
+>>> a = 5
+>>> type(a)
+<class 'int'>
+
+>>> a = input()
+5
+>>> type(a)
+<class 'str'>
+>>> age = int(input())
+5
+>>> type(a)
+<class 'str'>
+>>> type(age)
+<class 'int'>
+>>> age = int(input())
+jghgwf
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'jghgwf'
+>>> 
+>>> age = int(input())
+string
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'string'
+>>> 
+--------------------------------------------------------------------
+>>> a = int(input("Enter a:"))
+Enter a:5
+>>> b = int(input("Enter b:"))
+Enter b:10
+>>> prnt("a = ", a, "b = ", b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'prnt' is not defined
+>>> print("a = ", a, "b = ", b)
+a =  5 b =  10
+>>> if a > b:
+...     print("a is greater")
+... else
+  File "<stdin>", line 3
+    else
+       ^
+SyntaxError: invalid syntax
+>>> if a > b:
+...     print("a is greater")
+... 
+>>> if a > b:
+...     print("a is greater")
+... 
+>>> if a < b:
+...     print("a is Lesser")
+... 
+a is Lesser
+>>> if a < b:
+... print("a is lesser")
+  File "<stdin>", line 2
+    print("a is lesser")
+        ^
+IndentationError: expected an indented block
+>>> 
+----------------------------------------------------------------------
+>>> if a>b:
+...     print("a is greater")
+... else:
+...     print("b is greater")
+... 
+b is greater
+>>> if a>b:
+...     print("a is greater")
+... else if b>a:
+  File "<stdin>", line 3
+    else if b>a:
+          ^
+SyntaxError: invalid syntax
+>>> 
+---------------------------------------------------------------------
+>>> a = int(input("Enter num1: "))
+Enter num1: 4
+>>> b = int(input("Enter num2: "))
+Enter num2: 4.6
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '4.6'
+>>> b = int(input("Enter num2: "))
+Enter num2: 5
+>>> c = int(input("Enter num3: "))
+Enter num3: 1
+>>> if a>b && a>c
+  File "<stdin>", line 1
+    if a>b && a>c
+            ^
+SyntaxError: invalid syntax
+>>> if a>b
+  File "<stdin>", line 1
+    if a>b
+         ^
+SyntaxError: invalid syntax
+>>> if a>b:
+...     if a>c:
+...             print("a is greater")
+... elif b>c:
+...     print("b is greater")
+... else:
+...     print("c is greater")
+... 
+b is greater
+>>> if a>b and a>c:
+...     print("a is greater")
+... elif b>c:
+...     print("b is greater")
+... else:
+...     print("c is greater")
+... 
+b is greater
+>>>     print(c, "  is greater")
+  File "<stdin>", line 1
+    print(c, "  is greater")
+    ^
+IndentationError: unexpected indent
+>>> if a>b and a>c:
+...      print(a , " is greater")
+... elif b>c:
+...     print(b, " is greater")
+... else:
+...     print(c, " is greater")
+... 
+5  is greater
+>>> a = 5
+>>> print("a = " + str(a))
+a = 5
+>>> print("a = ", a)
+a =  5
+>>> 
+>>> for i in range (10)
+  File "<stdin>", line 1
+    for i in range (10)
+                      ^
+SyntaxError: invalid syntax
+>>> for i in range(10)
+  File "<stdin>", line 1
+    for i in range(10)
+                     ^
+SyntaxError: invalid syntax
+>>> for i in range of 10
+  File "<stdin>", line 1
+    for i in range of 10
+                    ^
+SyntaxError: invalid syntax
+>>> for i in range(10):
+...     print(i)
+... 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> for i in range(0, 10, 2):
+...     print(i)
+... 
+0
+2
+4
+6
+8
+
+
+>>> for i in array:
+...     print(i)
+... 
+4
+5
+6
+['Hello ', 'World', '!']
+>>> print(array)
+[4, 5, 6, ['Hello ', 'World', '!']]
+>>> array.extend(arr)
+>>> print(array)
+[4, 5, 6, ['Hello ', 'World', '!'], 'Hello ', 'World', '!']
+>>> for i in array:
+...     print(i)
+... 
+4
+5
+6
+['Hello ', 'World', '!']
+Hello 
+World
+!
+
+>>> array = []
+>>> a = 4
+>>> b = 5
+>>> c = 6
+>>> array.append(a)
+>>> array.append(b)
+>>> array.append(c)
+>>> for i in array:
+...     print(i)
+... 
+4
+5
+6
+>>> arr = []
+>>> a = "Hello "
+>>> b = "World"
+>>> c = "!"
+>>> arr.append(a)
+>>> arr.append(b)
+>>> arr.append(c)
+>>> 
+>>> for i in array:
+...     print(i, end ='')
+... 
+456>
+
+
+>>> i = 0
+>>> print(f"i = {i}")
+i = 0
+
+>>> bin(7)
+'0b111'
+>>> bin(7)[2::]
+'111'
+>>> bin(7)[2::2]
+'11'
+>>> name = "Pottermore"[2::3]
+>>> name = "Pottermore"
+>>> name[2::3]
+'trr'
+>>> name[::-1]
+'eromrettoP'
+>>> 
+
+>>> ord(a)
+104
+>>> a = "Hi"
+>>> a
+'Hi'
+>>> 
+
+
+>>> arr = input().split(" ")
+1 2 3
+>>> arr
+['1', '2', '3']
+>>> arr = input().split(' ' )
+1 2 3
+>>> arr
+['1', '2', '3']
+>>> arr = input().split('+')
+1+2+3+4+5
+>>> arr
+['1', '2', '3', '4', '5']
+>>> type(arr)
+<class 'list'>
